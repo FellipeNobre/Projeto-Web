@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Usuário</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Usuários</h1>
+    </header>
+    <main>
+        <h2>Incluir novo usuário</h2>
+        <form id="user-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            <span id="name-error" class="error"></span>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-error" class="error"></span>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+            <span id="password-error" class="error"></span>
+
+            <label for="roles">Permissões de acesso</label>
+            <input type="text" id="roles" name="roles" required>
+            <span id="roles-error" class="error"></span>
+
+            <div class="button-group">
+                <button type="button" id="back-button">Voltar</button>
+                <button type="submit" id="save-button">Salvar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./js/form.js"></script>
+</body>
+</html>
